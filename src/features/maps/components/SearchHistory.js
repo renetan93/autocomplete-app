@@ -28,7 +28,7 @@ export const SearchHistory = ({ onHistorySelected }) => {
     return () => {
       onHistorySelected(value)
     }
-  }, [])
+  }, [onHistorySelected])
 
   if (history.length === 0) {
     return (
